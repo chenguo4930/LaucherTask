@@ -2,9 +2,12 @@ package com.cheng.lib.launchertasklib.utils;
 
 import android.util.Log;
 
+/**
+ * @author Administrator
+ */
 public class DispatcherLog {
 
-    private static boolean sDebug = true;
+    private static boolean sDebug = false;
 
     public static void i(String msg) {
         if (!sDebug) {

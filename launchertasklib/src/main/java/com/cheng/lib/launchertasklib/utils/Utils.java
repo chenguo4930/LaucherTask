@@ -8,6 +8,9 @@ import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
 
+/**
+ * @author Administrator
+ */
 public class Utils {
 
     private static String sCurProcessName = null;

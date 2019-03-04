@@ -9,6 +9,9 @@ import com.cheng.lib.launchertasklib.task.Task;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * 延迟初始化
+ */
 public class DelayInitDispatcher {
 
     private Queue<Task> mDelayTasks = new LinkedList<>();
