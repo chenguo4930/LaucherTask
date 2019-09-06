@@ -47,8 +47,8 @@ public class Utils {
     private static String getCurProcessNameFromProc() {
         BufferedReader cmdlineReader = null;
         try {
-            cmdlineReader = new BufferedReader(new InputStreamReader(new FileInputStream("/proc/" +
-                    android.os.Process.myPid() + "/cmdline"), "iso-8859-1"));
+            cmdlineReader = new BufferedReader(new InputStreamReader(
+                    new FileInputStream("/proc/" + android.os.Process.myPid() + "/cmdline"), "iso-8859-1"));
             int c;
             StringBuilder processName = new StringBuilder();
             while ((c = cmdlineReader.read()) > 0) {

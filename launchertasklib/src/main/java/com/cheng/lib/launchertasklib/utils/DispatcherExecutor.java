@@ -12,6 +12,9 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+ * @author Administrator
+ */
 public class DispatcherExecutor {
     private static ThreadPoolExecutor sCPUThreadPoolExecutor;
     private static ExecutorService sIOThreadPoolExecutor;
@@ -61,11 +64,8 @@ public class DispatcherExecutor {
 
         DefaultThreadFactory() {
             SecurityManager s = System.getSecurityManager();
-            group = (s != null) ? s.getThreadGroup() :
-                    Thread.currentThread().getThreadGroup();
-            namePrefix = "TaskDispatcherPool-" +
-                    poolNumber.getAndIncrement() +
-                    "-Thread-";
+            group = (s != null) ? s.getThreadGroup() : Thread.currentThread().getThreadGroup();
+            namePrefix = "TaskDispatcherPool-" + poolNumber.getAndIncrement() + "-Thread-";
         }
 
         @Override

@@ -11,6 +11,7 @@ import java.util.Queue;
 
 /**
  * 延迟初始化
+ * @author Administrator
  */
 public class DelayInitDispatcher {
 
